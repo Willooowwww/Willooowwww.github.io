@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilmar's Portfolio</title>
+    <meta name="description" content="Wilmar Quillaman - IT Specialist & Web Developer. Full-stack web solutions, technical support, and innovative software development. Available for opportunities.">
+    <meta name="keywords" content="Web Developer, IT Specialist, PHP, JavaScript, HTML, CSS, MySQL, Software Developer, Portfolio">
+    <meta name="author" content="Wilmar Quillaman">
+    <meta property="og:title" content="Wilmar Quillaman - IT Specialist & Web Developer">
+    <meta property="og:description" content="Explore my projects and technical expertise in web development and IT solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://willooowwww.github.io">
+    <meta name="theme-color" content="#008080">
+    <title>Wilmar Quillaman - Web Developer & IT Specialist Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/images/wilmar-logo.png"/>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Wilmar Quillaman",
+      "url": "https://willooowwww.github.io",
+      "jobTitle": "Web Developer & IT Specialist",
+      "email": "wilquillaman@gmail.com",
+      "telephone": "+63 928 704 0182",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dumaguete City",
+        "addressCountry": "PH"
+      },
+      "sameAs": [
+        "https://github.com/Willooowwww",
+        "https://linkedin.com/in/wilmar-quillaman-41baa5358",
+        "https://www.youtube.com/@wilmarquillaman2411"
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -30,10 +60,12 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-sm ms-2 text-light" href="#" style="background-color: teal;" onclick="alert('Add your resume link here')">Resume</a></li>
                 </ul>
             </div>
         </div>
@@ -60,20 +92,22 @@
         
                     <!-- Intro Text -->
                     <div class="col-md-6 d-flex flex-column justify-content-center text-center text-md-start">
-                        <h1 class="animated-text"><b>Hi, I'm <span class="highlight">Wilmar</span></b></h1>
-                        <p class="lead">IT Specialist | Web Developer | Tech Enthusiast</p>
+                        <h1 class="animated-text"><b>Hi, I'm <span class="highlight">Wilmar Quillaman</span></b></h1>
+                        <p class="lead fw-semibold">Full-Stack Web Developer & IT Support Specialist</p>
+                        <p class="text-muted mb-4">Crafting scalable web solutions | Technical troubleshooting | Software development</p>
         
                         <!-- Social Icons -->
                         <div class="contact-icons">
-                            <a href="mailto:wilquillaman@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                            <a href="https://www.facebook.com/wilmar.quillaman" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://github.com/Willooowwww" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/wilmar-quillaman-41baa5358" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.youtube.com/@wilmarquillaman2411" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://github.com/Willooowwww" target="_blank" aria-label="GitHub" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/wilmar-quillaman-41baa5358" target="_blank" aria-label="LinkedIn" title="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:wilquillaman@gmail.com" target="_blank" aria-label="Email" title="Send Email"><i class="fas fa-envelope"></i></a>
                         </div>
         
-                        <!-- Call-to-Action Button -->
-                        <a href="#projects" class="btn mt-3 text-light" style="background-color: teal;">View My Work</a>
+                        <!-- Call-to-Action Buttons -->
+                        <div class="mt-4 d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="#projects" class="btn btn-lg text-light" style="background-color: teal;">View My Work</a>
+                            <a href="#contact" class="btn btn-lg btn-outline-dark">Get in Touch</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,17 +129,93 @@
                     <div class="col-md-7">
                         <div class="card border-0 shadow-sm p-4">
                             <div class="card-body">
-                                <h4 class="card-title" style="color: teal;">Hello, I'm Wilmar Quillaman</h4>
-                                <p class="card-text text-muted">
-                                    I am a passionate IT Specialist and Web Developer with a Bachelor's degree in Information Technology, specializing in both technical support and software development.
+                                <h4 class="card-title" style="color: teal;">About Me</h4>
+                                <p class="card-text">
+                                    I'm a results-driven IT Specialist and Web Developer with a Bachelor's degree in Information Technology. I specialize in building scalable web applications and providing comprehensive technical solutions.
                                 </p>
                                 <p class="card-text">
-                                    Driven by curiosity and a commitment to continuous learning, I am always eager to take on new challenges, collaborate with like-minded professionals, and contribute to innovative projects.
+                                    <strong>Key Strengths:</strong>
                                 </p>
-                                <p class="card-text">
-                                    I welcome new opportunities to connect and work with individuals or organizations that share my passion for technology.
+                                <ul class="card-text">
+                                    <li>Full-stack web development (PHP, JavaScript, MySQL)</li>
+                                    <li>System administration & technical troubleshooting</li>
+                                    <li>Network management & firewall configuration</li>
+                                    <li>Responsive UI/UX design with Bootstrap</li>
+                                </ul>
+                                <p class="card-text text-muted small">
+                                    I'm committed to continuous learning and delivering high-quality solutions. Open to collaboration on innovative projects.
                                 </p>
-                                <a href="#contact" class="btn mt-2 text-light" style="background-color: teal;">Let's Connect</a>
+                                <a href="#contact" class="btn mt-3 text-light" style="background-color: teal;">Let's Work Together</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5" style="color: teal;">Professional Experience</h2>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <!-- Experience 1 -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="card-title" style="color: teal;">IT Support Specialist</h5>
+                                        <p class="card-subtitle text-muted"><strong>ECEnterprises Group Manila, Inc.</strong> | Dumaguete City</p>
+                                    </div>
+                                    <span class="badge" style="background-color: teal;">Full-time</span>
+                                </div>
+                                <p class="small text-muted mb-3">October 2023 - July 2026</p>
+                                <ul class="card-text">
+                                    <li>Delivered comprehensive end-user technical support, maintaining IT systems and network infrastructure, while successfully managing site escalations to enhance user-satisfaction</li>
+                                    <li>Installed, configured, and troubleshoot hardware, software, peripherals, and network components to ensure seamless operations across the organization</li>
+                                    <li>Managed IT service tickets, user accounts, servers, and system updates, contributing to a 99.9% system uptime and significantly reducing service disruptions</li>
+                                    <li>Optimized technical documentation processes, improving accessibility and efficiency for IT staff and end-users</li>
+                                    <li>Proactively identified potential technical issues, enabling timely resolutions and improving overall IT service delivery and service level agreements (SLA)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Experience 2 -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="card-title" style="color: teal;">IT Intern</h5>
+                                        <p class="card-subtitle text-muted"><strong>ECEnterprises Group Manila, Inc.</strong> | Dumaguete City</p>
+                                    </div>
+                                    <span class="badge" style="background-color: teal;">Internship</span>
+                                </div>
+                                <p class="small text-muted mb-3">July 2023 - October 2023</p>
+                                <ul class="card-text">
+                                    <li>Assisted in troubleshooting hardware, software, and network issues, providing foundational support under the supervision of IT staff</li>
+                                    <li>Responded to user inquiries effectively, ensuring an exceptional level of customer service</li>
+                                    <li>Supported the assembly, disassembly, and relocation of computer systems to optimize workflow efficiency</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Experience 3 -->
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h5 class="card-title" style="color: teal;">Customer Service Representative</h5>
+                                        <p class="card-subtitle text-muted"><strong>Inspiro Relia, Inc.</strong> | Dumaguete City</p>
+                                    </div>
+                                    <span class="badge" style="background-color: teal;">Full-time</span>
+                                </div>
+                                <p class="small text-muted mb-3">January 2021 - March 2021</p>
+                                <ul class="card-text">
+                                    <li>Handled customer inquiries and resolved issues, maintaining accurate records to guarantee customer satisfaction and service quality</li>
+                                    <li>Delivered high-quality support by consistently meeting performance and quality standards, contributing to team success</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -119,117 +229,79 @@
             <h2 class="text-center mb-5 font-weight-bold" style="color: teal;">Professional Skills</h2>
         
             <div class="row">
-                <!-- Programming Skills -->
+                <!-- Programming Languages -->
                 <div class="col-md-4">
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
-                            <h4 class="text-center text-dark">Programming Skills</h4>
-                            <div class="mb-3">
-                                <label>HTML</label>
-                                <div class="progress" data-aos="fade-up">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 95%" data-value="95%">95%</div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>Bootstrap</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" data-value="90%">90%</div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>PHP</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" data-value="90%">90%</div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>JavaScript</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="300">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" data-value="85%">85%</div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>CSS</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" data-value="90%">90%</div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>MySQL</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="500">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" data-value="90%">90%</div>
-                                </div>
+                            <h5 class="text-center text-dark mb-4"><i class="bi bi-code-slash" style="color: teal;"></i> Programming</h5>
+                            <div class="skill-item mb-3">
+                                <span class="badge bg-info">PHP</span>
+                                <span class="badge bg-info">JavaScript</span>
+                                <span class="badge bg-info">HTML5</span>
+                                <span class="badge bg-info">CSS3</span>
+                                <span class="badge bg-info">MySQL</span>
+                                <span class="badge bg-info">Laravel</span>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <!-- Technical Skills -->
+                <!-- IT & System Administration -->
                 <div class="col-md-4">
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
-                            <h4 class="text-center text-dark">Technical Skills</h4>
-                            <div class="mb-3">
-                                <label>Operating Systems</label>
-                                <div class="progress" data-aos="fade-up">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" data-value="95%">95%</div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>Networking</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" data-value="90%">90%</div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>Firewall Management</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" data-value="80%">80%</div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>Computer Troubleshooting</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="300">
-                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" data-value="90%">90%</div>
-                                </div>
+                            <h5 class="text-center text-dark mb-4"><i class="bi bi-gear" style="color: teal;"></i> IT & Systems</h5>
+                            <div class="skill-item mb-3">
+                                <span class="badge bg-primary">Technical Troubleshooting</span>
+                                <span class="badge bg-primary">Hardware Repair</span>
+                                <span class="badge bg-primary">Network Administration</span>
+                                <span class="badge bg-primary">Operating Systems</span>
+                                <span class="badge bg-primary">Active Directory</span>
+                                <span class="badge bg-primary">Ticketing Systems</span>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <!-- General Skills -->
+                <!-- Soft Skills & Tools -->
                 <div class="col-md-4">
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
-                            <h4 class="text-center text-dark">General Skills</h4>
-                            <div class="mb-3">
-                                <label>Problem-Solving & Analytical Thinking</label>
-                                <div class="progress" data-aos="fade-up">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 85%" data-value="85%">85%</div>
-                                </div>
+                            <h5 class="text-center text-dark mb-4"><i class="bi bi-star" style="color: teal;"></i> Soft Skills</h5>
+                            <div class="skill-item mb-3">
+                                <span class="badge bg-success">Problem-Solving</span>
+                                <span class="badge bg-success">Communication</span>
+                                <span class="badge bg-success">Customer Service</span>
+                                <span class="badge bg-success">Leadership</span>
+                                <span class="badge bg-success">Teamwork</span>
+                                <span class="badge bg-success">Adaptability</span>
                             </div>
-                            <div class="mb-3">
-                                <label>Communication</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 85%" data-value="85%">85%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technical Proficiencies -->
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="text-center text-dark mb-4"><i class="bi bi-terminal" style="color: teal;"></i> Technical Proficiencies</h5>
+                            <div class="row text-center">
+                                <div class="col-md-4 mb-3">
+                                    <strong>Operating Systems:</strong> Windows, macOS, Linux
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>Adaptability</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%" data-value="90%">90%</div>
+                                <div class="col-md-4 mb-3">
+                                    <strong>Office & Productivity:</strong> Microsoft Office 365, Google Suite
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>Project Management</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="300">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%" data-value="90%">90%</div>
+                                <div class="col-md-4 mb-3">
+                                    <strong>Design & Media:</strong> Adobe Photoshop, Video Editing
                                 </div>
-                            </div>
-                            <div class="mb-3">
-                                <label>Customer Service</label>
-                                <div class="progress" data-aos="fade-up" data-aos-delay="400">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 95%" data-value="95%">95%</div>
+                                <div class="col-md-6 mb-3">
+                                    <strong>Databases:</strong> MySQL, Database Design & Management
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <strong>Web Technologies:</strong> Bootstrap, Responsive Design, Git
                                 </div>
                             </div>
                         </div>
@@ -243,11 +315,18 @@
         <hr>
         <section id="projects" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-4" style="color: teal;">Projects</h2>
+                <h2 class="text-center mb-4" style="color: teal;">Featured Projects</h2>
                 <div class="row">
                     <!-- Project 1 -->
                     <div class="col-md-6 mb-4">
-                        <h5 class="text-center">Clickr - Social Media Web App</h5>
+                        <h5 class="text-center">ECE Contact Centers Downtime Tracker</h5>
+                        <div class="text-center mb-2">
+                            <span class="badge bg-danger me-1">PHP</span>
+                            <span class="badge bg-danger me-1">MySQL</span>
+                            <span class="badge bg-danger me-1">Dashboard</span>
+                            <span class="badge bg-danger">Analytics</span>
+                        </div>
+                        <p class="text-center text-muted small mb-3">Web-based system to monitor and analyze downtime incidents across 5 ECE sites, featuring real-time tracking and visual analytics dashboards to assist IT teams in decision-making.</p>
                         <div id="clickrCarousel" class="carousel slide" data-bs-ride="carousel">
                             <!-- Carousel Indicators -->
                             <div class="carousel-indicators">
@@ -258,24 +337,24 @@
                             <!-- Carousel Items -->
                             <div class="carousel-inner rounded">
                                 <div class="carousel-item active">
-                                    <img src="assets/images/Clickr-Homepage.png" class="d-block w-100" alt="Clickr Homepage">
+                                    <img src="assets/images/ECE-DT-login.png" class="d-block w-100" alt="ECE-DT Login">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Homepage</h5>
-                                        <p>A dynamic platform for connecting with people and sharing moments.</p>
+                                        <h5>Login Interface</h5>
+                                        <p>Secure access to the downtime tracking system.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/Clickr-SignUp.png" class="d-block w-100" alt="Clickr SignUp Page">
+                                    <img src="assets/images/ECE-DT-dashboard.png" class="d-block w-100" alt="ECE-DT Dashboard">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Signup Page</h5>
-                                        <p>Create an account and engage with friends seamlessly.</p>
+                                        <h5>Analytics Dashboard</h5>
+                                        <p>Real-time tracking and comprehensive metrics overview.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/Clickr-Newsfeed.png" class="d-block w-100" alt="Clickr News Feed">
+                                    <img src="assets/images/ECE-DT-form.png" class="d-block w-100" alt="ECE-DT Tracker Form">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Interactive News Feed</h5>
-                                        <p>Stay updated with real-time posts and interactions.</p>
+                                        <h5>Incident Tracker Form</h5>
+                                        <p>Efficient downtime record input and management.</p>
                                     </div>
                                 </div>
                             </div>
@@ -290,68 +369,130 @@
                             </button>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="https://drive.google.com/file/d/1YKY3OkNzBOOdXQhhaqcMioARgIXI4qlM/view?usp=sharing" class="btn btn-success" target="_blank">Download Project <i class="bi bi-download"></i></a>
+                            <a href="https://drive.google.com/file/d/1ILUi4-aFhUEX06FIY1eCG0uWjs3ZP3j-/view?usp=sharing" class="btn btn-danger me-2" target="_blank">Download <i class="bi bi-download"></i></a>
+                            <a href="#" class="btn btn-outline-primary" target="_blank" title="GitHub repository link">GitHub <i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <!-- Project 2 -->
                     <div class="col-md-6 mb-4">
-                        <h5 class="text-center">ECE Downtime Tracker</h5>
-                        <div id="eceDtCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <!-- Carousel Indicators -->
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#eceDtCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#eceDtCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#eceDtCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <!-- Carousel Items -->
-                            <div class="carousel-inner rounded">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/ECE-DT-login.png" class="d-block w-100" alt="ECE-DT Login">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Login Page</h5>
-                                        <p>Secure access to the downtime tracking system.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/ECE-DT-dashboard.png" class="d-block w-100" alt="ECE-DT Dashboard">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Dashboard</h5>
-                                        <p>Comprehensive overview of system outages and metrics.</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/ECE-DT-form.png" class="d-block w-100" alt="ECE-DT Tracker Form">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Downtime Form</h5>
-                                        <p>Input and manage downtime records efficiently.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Carousel Controls -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#eceDtCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#eceDtCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                        <h5 class="text-center">Clickr - Social Media Web Application</h5>
+                        <div class="text-center mb-2">
+                            <span class="badge bg-primary me-1">PHP</span>
+                            <span class="badge bg-primary me-1">JavaScript</span>
+                            <span class="badge bg-primary me-1">MySQL</span>
+                            <span class="badge bg-primary">Bootstrap</span>
                         </div>
-                        <div class="text-center mt-3">
-                            <a href="https://drive.google.com/file/d/1ILUi4-aFhUEX06FIY1eCG0uWjs3ZP3j-/view?usp=sharing" class="btn btn-success" target="_blank">Download Project <i class="bi bi-download"></i></a>
+                        <p class="text-center text-muted small mb-3">Social media platform that allows users to post, update, and delete statuses, facilitating user interaction and engagement with real-time notifications.</p>
+                        <div id="clickrCarousel" class="carousel slide" data-bs-ride="carousel">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h4 class="text-center mb-4" style="color: teal;">Additional Projects</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h6 class="card-title" style="color: teal;">Health Care Diagnostic Center Management System (HCDCMS)</h6>
+                                        <p class="card-text text-muted small">Created a comprehensive management system for a diagnostic center, enhancing both employee operations and patient-related processes, including effective laboratory result management.</p>
+                                        <div>
+                                            <span class="badge bg-warning me-1">PHP</span>
+                                            <span class="badge bg-warning">MySQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="card-body">
+                                        <h6 class="card-title" style="color: teal;">File Management System</h6>
+                                        <p class="card-text text-muted small">Created a cloud-based file storage platform using Laravel, enabling users to upload, organize, and access documents efficiently online.</p>
+                                        <div>
+                                            <span class="badge bg-success me-1">Laravel</span>
+                                            <span class="badge bg-success">MySQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 mb-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/drive/folders/13RCJB6ahTcz62Z7UaLzX63ow3GGEoNBP?usp=sharing" type="button" class="btn btn-lg mt-3 text-light" style="background-color: teal;" target="_blank">
-                            Other Projects <i class="bi bi-box-fill"></i>
+                <div class="row mt-3">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <a href="https://drive.google.com/drive/folders/13RCJB6ahTcz62Z7UaLzX63ow3GGEoNBP?usp=sharing" type="button" class="btn btn-lg text-light" style="background-color: teal;" target="_blank">
+                            View All Projects <i class="bi bi-box-fill"></i>
                         </a>
                     </div>
                 </div>
                 
             </div>
         </section>
+        <hr>
+        
+        <!-- Education Section -->
+        <section id="education" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5" style="color: teal;">Education & Certifications</h2>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <!-- Education -->
+                        <h4 class="mb-4" style="color: teal;">Education</h4>
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="card-title mb-1" style="color: teal;">Bachelor of Science in Information Technology</h6>
+                                        <p class="card-subtitle text-muted mb-1">Negros Oriental State University</p>
+                                        <p class="card-subtitle text-muted small">August 2020 – June 2024</p>
+                                    </div>
+                                    <span class="badge" style="background-color: teal;">Dean's Lister</span>
+                                </div>
+                                <p class="card-text small text-muted">Award: Dean's Lister for AY 2020 & 2021</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm mb-5">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="card-title mb-1" style="color: teal;">Computer Systems Servicing – TVL – CSS</h6>
+                                        <p class="card-subtitle text-muted mb-1">Dauin National High School</p>
+                                        <p class="card-subtitle text-muted small">June 2017 – March 2020</p>
+                                    </div>
+                                    <span class="badge" style="background-color: teal;">With Honors</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Certifications -->
+                        <h4 class="mb-4" style="color: teal;">Professional Certifications</h4>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Civil Service Professional Level II</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Certificate in Web Development Fundamentals</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Certificate in Theoretical Understanding of HTML</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>National Certificate II in Computer Systems Servicing</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Certificate of Training for Computer Systems Servicing, NC II</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Adobe Photoshop Editing Skills Certificate</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Digital Literacy Training: Image Editing</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>iLEAP Plus: Introduction to Copyright</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Agile Methodology & BPM Industry Trends</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Career in Cybersecurity Training</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Basic Video Editing Using Windows</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill" style="color: teal; margin-right: 10px;"></i>Data Visualization Dashboarding - Google Data Studio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <hr>
         <section id="certificates" class="certificates-section">
             <div class="container">
@@ -406,8 +547,8 @@
         <hr>
         <section id="contact" class="contact-section">
             <div class="container">
-                <h2 class="text-center" style="color: teal;">Get in Touch</h2>
-                <p class="text-center">Feel free to reach out through any of the platforms below.</p>
+                <h2 class="text-center mb-2" style="color: teal;">Let's Connect</h2>
+                <p class="text-center text-muted mb-4">I'm actively looking for opportunities to contribute my skills and expertise. Reach out via any platform below.</p>
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="contact-info text-center">
